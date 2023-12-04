@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="menu">
+        <h1>Hotel na wodzie</h1>
+        <a href="#">Strona Główna</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Cennik</a>
+        <a href="#">Informacje o hotelu</a>
+        </div>
+        <div class="descrpition">
+            <h2>Informacje</h2>
+            <p>Hotel na wodzie posiada barek , 2 pokoje wynajmowane , łazienkę i kuchnię</p>
+            <p>Noc w hotelu to koszt 190zł od osoby</p>
+            <p>Hotel cieszy się wysoką popularnością i dobrymi opiniami</p>
+            <p>Serdecznie zapraszamy!</p>
+        </div>
+        <div class="footer">
+            <h2>Numer kontaktowy:677-231-782</h3>
+            <h2>Email kontaktowy: HotelWodny@gmail.com</h4>
+        </div>
+    </main>
+</body>
+</html>

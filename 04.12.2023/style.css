@@ -1,0 +1,25 @@
+img{
+    width:1900px;
+    height:400px;
+}
+.menu{
+    text-align:center;
+    font-weight:800;
+    font-size:20px;
+    background:blue;
+}
+.description
+{
+    background-color:aqua;
+    font-size:22px;
+}
+.footer
+{
+    background-color: darkgoldenrod;
+    height:125px;
+}
+a{
+    display: inline;
+    font-size:25px;
+    padding:30px;
+}
