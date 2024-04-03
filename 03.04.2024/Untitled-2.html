@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantor</title>
+    <style>
+        table {
+            width: 100%;
+        border-style: dotted;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="number"] {
+            width: 80px;
+            padding: 5px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Kantor Krzysia</h2>
+    <table>
+        <tr>
+            <th>Waluta</th>
+            <th>Kurs</th>
+            <th>Kwota w PLN</th>
+            <th>Kwota</th>
+        </tr>
+        <tr>
+            <td>USD</td>
+            <td>0.26</td> <!-- Aktualny kurs USD w PLN -->
+            <td><input type="number" id="usdAmount" min="0" step="0.01"></td>
+            <td id="usdResult"></td>
+        </tr>
+        <tr>
+            <td>GBP</td>
+            <td>0.19</td> <!-- Aktualny kurs GBP w PLN -->
+            <td><input type="number" id="gbpAmount" min="0" step="0.01"></td>
+            <td id="gbpResult"></td>
+        </tr>
+        <tr>
+            <td>EUR</td>
+            <td>0.23</td> <!-- Aktualny kurs EUR w PLN -->
+            <td><input type="number" id="eurAmount" min="0" step="0.01"></td>
+            <td id="eurResult"></td>
+        </tr>
+        <tr>
+            <td>CHF</td>
+            <td>0.24</td> <!-- Aktualny kurs CHF w PLN -->
+            <td><input type="number" id="chfAmount" min="0" step="0.01"></td>
+            <td id="chfResult"></td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="calculate()">Przelicz</button>
+
+    <script>
+        function calculate() {
+            var usdAmount = document.getElementById("usdAmount").value;
+            var gbpAmount = document.getElementById("gbpAmount").value;
+            var eurAmount = document.getElementById("eurAmount").value;
+            var chfAmount = document.getElementById("chfAmount").value;
+
+            var usdRate = 0.26; // Aktualny kurs USD w PLN
+            var gbpRate = 0.19; // Aktualny kurs GBP w PLN
+            var eurRate = 0.23; // Aktualny kurs EUR w PLN
+            var chfRate = 0.24; // Aktualny kurs CHF w PLN
+
+            document.getElementById("usdResult").textContent = (usdAmount * usdRate).toFixed(2);
+            document.getElementById("gbpResult").textContent = (gbpAmount * gbpRate).toFixed(2);
+            document.getElementById("eurResult").textContent = (eurAmount * eurRate).toFixed(2);
+            document.getElementById("chfResult").textContent = (chfAmount * chfRate).toFixed(2);
+        }
+    </script>
+</body>
+</html>
